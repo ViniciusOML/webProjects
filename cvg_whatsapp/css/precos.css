@@ -85,13 +85,8 @@
 .column4 {
     float: left;
     width: 25%;
-    padding: 0 10px;
-}
-
-.column3 {
-    float: left;
-    width: 33.33%;
-    padding: 0 50px;
+    padding: 0 16px;
+    margin-top: 20px;
 }
 
 
@@ -116,7 +111,7 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
-    padding: 16px;
+    padding: 60px;
     text-align: left;
     background-color: #cccccc;
 }
@@ -125,10 +120,6 @@
 /* Responsive columns - one column layout (vertical) on small screens */
 
 @media screen and (max-width: 600px) {
-    .column3 {
-        width: 100%;
-        display: block;
-    }
     .column4 {
         width: 100%;
         display: block;
@@ -146,5 +137,14 @@
 }
 
 .precos-font-size {
+    font-size: 12px;
+}
+
+
+/*Estilo da caixa de formulário*/
+
+.option-box {
+    border-radius: 10px;
+    font-family: inherit;
     font-size: 12px;
 }

@@ -1,17 +1,17 @@
-(function ($) {
+(function($) {
     'use strict';
 
     var $window = $(window);
 
     // :: Preloader Active Code
-    $window.on('load', function () {
-        $('#preloader').fadeOut('1000', function () {
+    $window.on('load', function() {
+        $('#preloader').fadeOut('1000', function() {
             $(this).remove();
         });
     });
 
     // :: Sticky Active Code
-    $window.on('scroll', function () {
+    $window.on('scroll', function() {
         if ($window.scrollTop() > 0) {
             $('.header-area').addClass('sticky');
         } else {
@@ -35,24 +35,24 @@
             animateIn: 'fadeIn',
             animateOut: 'fadeOut'
         })
-        welcomeSlider.on('translate.owl.carousel', function () {
+        welcomeSlider.on('translate.owl.carousel', function() {
             var layer = $("[data-animation]");
-            layer.each(function () {
+            layer.each(function() {
                 var anim_name = $(this).data('animation');
                 $(this).removeClass('animated ' + anim_name).css('opacity', '0');
             });
         });
-        $("[data-delay]").each(function () {
+        $("[data-delay]").each(function() {
             var anim_del = $(this).data('delay');
             $(this).css('animation-delay', anim_del);
         });
-        $("[data-duration]").each(function () {
+        $("[data-duration]").each(function() {
             var anim_dur = $(this).data('duration');
             $(this).css('animation-duration', anim_dur);
         });
-        welcomeSlider.on('translated.owl.carousel', function () {
+        welcomeSlider.on('translated.owl.carousel', function() {
             var layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
-            layer.each(function () {
+            layer.each(function() {
                 var anim_name = $(this).data('animation');
                 $(this).addClass('animated ' + anim_name).css('opacity', '1');
             });
@@ -67,7 +67,7 @@
         });
 
         var dot = $('.client_slides .owl-dot');
-        dot.each(function () {
+        dot.each(function() {
             var index = $(this).index() + 1;
             if (index < 10) {
                 $(this).html('0').append(index);
@@ -95,9 +95,9 @@
 
     // :: Masonary Gallery Active Code
     if ($.fn.imagesLoaded) {
-        $('.dream-portfolio').imagesLoaded(function () {
+        $('.dream-portfolio').imagesLoaded(function() {
             // filter items on button click
-            $('.portfolio-menu').on('click', 'button', function () {
+            $('.portfolio-menu').on('click', 'button', function() {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
@@ -115,7 +115,7 @@
     }
 
     // :: Gallery Menu Style Active Code
-    $('.portfolio-menu button.btn').on('click', function () {
+    $('.portfolio-menu button.btn').on('click', function() {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
     })
@@ -123,8 +123,8 @@
     // :: ScrollUp Active Code
     if ($.fn.scrollUp) {
         $.scrollUp({
-            scrollSpeed: 1500,
-            scrollText: 'Scroll Top'
+            scrollSpeed: 1000,
+            scrollText: 'Voltar'
         });
     }
 
@@ -158,15 +158,15 @@
     }
 
     // :: PreventDefault a Click
-    $("a[href='#']").on('click', function ($) {
+    $("a[href='#']").on('click', function($) {
         $.preventDefault();
     });
 
     // :: Accordian Active Code
-    (function () {
+    (function() {
         var dd = $('dd');
         dd.filter(':nth-child(n+3)').hide();
-        $('dl').on('click', 'dt', function () {
+        $('dl').on('click', 'dt', function() {
             $(this).next().slideDown(500).siblings('dd').slideUp(500);
         })
     })();

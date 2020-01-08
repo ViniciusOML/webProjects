@@ -12,7 +12,7 @@
     float: left;
     width: 25%;
     padding: 0 10px;
-    margin: 50px;
+    margin: 35px;
 }
 
 
@@ -37,10 +37,9 @@
 .card {
     box-shadow: 0 45px 5px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
-    padding: 20px;
+    padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    padding-bottom: 150px;
 }
 
 
@@ -65,4 +64,14 @@
     -webkit-box-direction: normal;
     word-break: normal;
     align-self: center;
+}
+
+.cards-btn {
+    font-size: 12px;
+    padding-top: 10px;
+    border: 1px solid rgba(114, 114, 114, 0.496);
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
 }
