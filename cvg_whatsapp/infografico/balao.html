@@ -3,20 +3,21 @@
 
 <style>
     body {
-        background-color: grey;
+        background-color: #004065;
     }
     
-    .balao {
-        background: white;
-        /* cor de fundo do balão grande*/
+    .balao-direita {
         border-radius: 15px;
+        border-style: solid;
+        border-color: grey;
+        border-width: thin;
         width: 90px;
         height: 50px;
         /* Position relative para a seta não exceder os limites do balão, já que vamos usar position absolute nele */
         position: relative;
     }
     
-    .balao:after {
+    .balao-direita:after {
         /* content necessário para a criação de um elemento vazio */
         content: "";
         width: 0;
@@ -26,17 +27,48 @@
         /* E aqui o truque com as bordas */
         border-left: 05px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid white;
         /* cor de fundo da seta de fala*/
+        border-top: 20px solid grey;
         bottom: -20px;
         /*Aqui definimos se a seta de fala ficará na direita ou esquerda do balão*/
+        right: 20%;
+    }
+    
+    .balao-esquerda {
+        border-radius: 15px;
+        border-style: solid;
+        border-color: grey;
+        border-width: thin;
+        width: 90px;
+        height: 50px;
+        position: relative;
+    }
+    
+    .balao-esquerda:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 05px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid rgb(128, 128, 128);
+        bottom: -20px;
         left: 20%;
+    }
+    
+    .balao-direita:hover {
+        background-color: rgba(255, 255, 255, 0.475);
+    }
+    
+    .balao-esquerda:hover {
+        background-color: rgba(255, 255, 255, 0.475);
     }
 </style>
 
 <body>
-    <div class="balao">
-    </div>
+    <div style="color: #004065; text-align:center" class="balao-direita">Mensagem</div>
+    <p><br></p>
+    <div style="color: #004065; text-align:center" class="balao-esquerda">SMS</div>
 </body>
 
 </html>
