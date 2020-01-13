@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-    body {
-        background-color: #004065;
-    }
-    
-    .balao-direita {
+<!-- CSS PARA SEGUNDO BALÃO DE CONVERSA
+   .balao-direita {
         border-radius: 15px;
         border-style: solid;
         border-color: grey;
@@ -32,6 +27,10 @@
         bottom: -20px;
         /*Aqui definimos se a seta de fala ficará na direita ou esquerda do balão*/
         right: 20%;
+    }-->
+<style>
+    body {
+        background-color: #004065;
     }
     
     .balao-esquerda {
@@ -39,9 +38,12 @@
         border-style: solid;
         border-color: grey;
         border-width: thin;
-        width: 90px;
+        width: 120px;
         height: 50px;
         position: relative;
+        color: #004065;
+        text-align: center;
+        font-size: 16px;
     }
     
     .balao-esquerda:after {
@@ -66,9 +68,24 @@
 </style>
 
 <body>
-    <div style="color: #004065; text-align:center" class="balao-direita">Mensagem</div>
+    <div class="balao-esquerda">Aquisição
+        <img src="images/aquisicao.png" style="height: 30px; width: 30px; float: right;">
+
+    </div>
     <p><br></p>
-    <div style="color: #004065; text-align:center" class="balao-esquerda">SMS</div>
+    <div class="balao-esquerda">Projeto
+        <img src="images/projeto.png" style="height: 50px; width: 50px; float:right;">
+
+    </div>
+    <p><br></p>
+    <div class="balao-esquerda">Ativação
+        <img src="images/ativacao.png" style="height: 60px; width: 60px;float: right;">
+
+    </div>
+    <p><br></p>
+    <div class="balao-esquerda"> Suporte
+        <img src="images/suporte.png" style="height: 50px; width: 50px;float: right;">
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,38 @@
+body {
+    background-color: #432fc3;
+}
+
+
+}
+article {
+    background-color: #432fc3;
+}
+.balao-esquerda {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    color: #004065;
+    text-align: center;
+    font-size: 16px;
+}
+.balao-esquerda:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 05px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(128, 128, 128);
+    bottom: -20px;
+    left: 20%;
+}
+.balao-direita:hover {
+    background-color: rgba(255, 255, 255, 0.475);
+}
+.balao-esquerda:hover {
+    background-color: rgba(255, 255, 255, 0.475);
+}
