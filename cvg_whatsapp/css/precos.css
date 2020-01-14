@@ -85,7 +85,6 @@
 .column4 {
     float: left;
     width: 25%;
-    padding: 0 16px;
     margin-top: 20px;
 }
 
@@ -111,7 +110,7 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
-    padding: 60px;
+    padding: 20px;
     text-align: left;
     background-color: #cccccc;
 }
@@ -138,6 +137,7 @@
 
 .precos-font-size {
     font-size: 12px;
+    text-align: left;
 }
 
 
