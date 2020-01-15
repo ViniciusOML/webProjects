@@ -16,7 +16,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 137px;
+    padding: 14px 140px;
     transition: 0.3s;
 }
 
@@ -51,12 +51,6 @@
         opacity: 1;
     }
 }
-
-.column {
-    float: left;
-    width: 33.33%;
-}
-
 
 /* Clear floats after the columns */
 
@@ -108,12 +102,13 @@
 
 /* Style the counter cards */
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.cardPrices {
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
-    padding: 60px;
+    padding: 10px;
     text-align: left;
     background-color: #cccccc;
+    border-radius: 15px;
 }
 
 
