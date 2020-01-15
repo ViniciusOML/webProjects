@@ -1,5 +1,157 @@
 /* Style the tab */
 
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 137px;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #0f0240;
+    color: white;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #01e675;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+
+.column4 {
+    float: left;
+    width: 25%;
+    padding: 0 16px;
+    margin-top: 20px;
+}
+
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.row {
+    margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 60px;
+    text-align: left;
+    background-color: #cccccc;
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 600px) {
+    .column4 {
+        width: 100%;
+        display: block;
+    }
+}
+
+.titlecard {
+    text-align: center;
+    font-size: 23px;
+}
+
+.subtitlecard {
+    text-align: center;
+    font-size: 16px;
+}
+
+.precos-font-size {
+    font-size: 12px;
+}
+
+
+/*Estilo da caixa de formulário*/
+
+.option-box {
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
