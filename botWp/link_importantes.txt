@@ -1,0 +1,5 @@
+Tutorial completo - https://medium.com/@jonathanferreiras/chatbot-python-whatsapp-e9c1079da5a
+clonar projeto: https://github.com/jonathanferreiras/whats-bot/blob/master/bot.py
+Curso de python: https://solyd.com.br/treinamentos/python-basico
+Plataforma de Cursos com alguns deles grátis:
+    https://solyd.com.br/
