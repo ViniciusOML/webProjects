@@ -2,8 +2,8 @@
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid white;
+    background-color: white;
     border-radius: 15px;
 }
 
@@ -108,7 +108,7 @@
     /* this adds the "card" effect */
     padding: 16px;
     text-align: left;
-    background-color: #cccccc;
+    background-color: white;
     border-radius: 15px;
 }
 
