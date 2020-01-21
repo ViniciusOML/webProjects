@@ -169,9 +169,6 @@
         $('dl').on('click', 'dt', function() {
             $(this).next().slideDown(500).siblings('dd').slideUp(500);
         })
-        $('dl').on('click', 'dt', function() {
-            //$(this).next().slideUp('dd');
-        })
     })();
 
     // :: Nav Active Code
