@@ -16,7 +16,7 @@ $titulo = 'Teste de envio PHPMAILER';
 # FIM: Informações do remetente
 
 #DESTINATARIO
-$emailDestinatario = 'limavinicius1@live.com';
+$emailDestinatario = 'vinicius.lima@convergemarketing.com.br';
 
 #MENSAGEM
 
@@ -42,7 +42,7 @@ $mail->Username = $emailRemetente;
 $mail->Password = $senha;
 
 // Tipo de encriptação que será usado na conexão SMTP
-$mail->SMTPSecure = 'ssl';
+//$mail->SMTPSecure = 'ssl';
 
 // Porta do servidor SMTP
 $mail->Port = 587;
@@ -63,18 +63,18 @@ $mail->addAddress($emailDestinatario);
 $mail->Subject = $titulo;
 
 // Mensagem que vai no corpo do e-mail
-$mensagem = ' Olá Rogério, segue líder coletado no site do <strong> Solução CVG: </strong> <br>
+$mensagem = ' Olá Rogério, segue lead coletado no site do <strong> Solução CVG: </strong> <br>
 <br> Nome: $ nome <br>
-<br> Telefone: $ telefone <br>
-<br> Empresa: $ empresa <br>
-<br> E-mail: $ email <br>
-<br> Solução de interesse: $ solucao ';
+<br> Telefone: '$telefone;' <br>
+<br> Empresa: '$empresa;' <br>
+<br> E-mail: '$email;' <br>
+<br> Solução de interesse: '$solucao;'';
 
 $mail->Body = $mensagem;
 
 $mail->SMTPDebug  = 2;
-echo '<pre>';
-var_dump($mail->Send());
+//echo '<pre>';
+//var_dump($mail->Send());
 // Envia o e-mail e captura o sucesso ou erro
 if ($mail->Send()) {
     $enviado = true;
