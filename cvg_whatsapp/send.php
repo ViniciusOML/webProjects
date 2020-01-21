@@ -1,5 +1,6 @@
 <?php
 
+
 # Informações do cliente - do Formulário HTML
 $email = $_POST['email'];
 $nome = $_POST['nome'];
@@ -12,7 +13,7 @@ $solucao = $_POST['solucao'];
 $senha = 'vini8810';
 $nomeRemetente = 'Converge Marketing';
 $emailRemetente = 'vinicius.lima@convergemarketing.com.br';
-$titulo = 'Teste de envio PHPMAILER';
+$titulo = 'Lead Converge Solution';
 # FIM: Informações do remetente
 
 #DESTINATARIO
@@ -59,25 +60,36 @@ $mail->FromName = $nomeRemetente;
 // Endereço do e-mail do destinatário
 $mail->addAddress($emailDestinatario);
 
+// Charset 
+$mail->CharSet = 'UTF-8'; 
+
 // Assunto do e-mail
 $mail->Subject = $titulo;
 
 // Mensagem que vai no corpo do e-mail
-$mensagem = ' Olá Rogério, segue lead coletado no site do <strong> Solução CVG: </strong> <br>
-<br> Nome: $ nome <br>
-<br> Telefone: '$telefone;' <br>
-<br> Empresa: '$empresa;' <br>
-<br> E-mail: '$email;' <br>
-<br> Solução de interesse: '$solucao;'';
+$mensagem = " Olá Rogério, segue lead coletado no site do <strong> Solução CVG: </strong> <br>
+<br> Nome: $nome <br>
+<br> Telefone: $telefone <br>
+<br> Empresa: $empresa <br>
+<br> E-mail: $email <br>
+<br> Solução de interesse: $solucao";
 
 $mail->Body = $mensagem;
 
+/*SESSÃO DEBUG PARA VERIFICAR ERROS
 $mail->SMTPDebug  = 2;
-//echo '<pre>';
-//var_dump($mail->Send());
+echo '<pre>';
+var_dump($mail->Send());*/
+
 // Envia o e-mail e captura o sucesso ou erro
+
+
 if ($mail->Send()) {
-    $enviado = true;
+    Header( 'Location: http://localhost/webProjects/cvg_whatsapp/' );
 } else {
     $enviado = false;
 }
+
+ 
+?>
+
