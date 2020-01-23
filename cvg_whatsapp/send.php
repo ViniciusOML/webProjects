@@ -10,9 +10,9 @@ $solucao = $_POST['solucao'];
 # FIM DAS INFORMAÇÕES DO CLIENTE   
 
 # INICIO: Informações do remetente
-$senha = 'vini8810';
+$senha = 'Cvg340397';
 $nomeRemetente = 'Converge Marketing';
-$emailRemetente = 'vinicius.lima@convergemarketing.com.br';
+$emailRemetente = 'convergemkt01@gmail.com';
 $titulo = 'Lead Converge Solution';
 # FIM: Informações do remetente
 
@@ -31,7 +31,7 @@ $mail = new PHPMailer;
 $mail->isSMTP();
 
 // Servidor SMTP
-$mail->Host = 'smtp.kinghost.net';
+$mail->Host = 'smtp.gmail.com';
 
 // Usar autenticação SMTP
 $mail->SMTPAuth = true;
@@ -43,10 +43,10 @@ $mail->Username = $emailRemetente;
 $mail->Password = $senha;
 
 // Tipo de encriptação que será usado na conexão SMTP
-//$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'ssl';
 
 // Porta do servidor SMTP
-$mail->Port = 587;
+$mail->Port = 465;
 
 // Informa se vamos enviar mensagens usando HTML
 $mail->IsHTML(true);
@@ -67,7 +67,7 @@ $mail->CharSet = 'UTF-8';
 $mail->Subject = $titulo;
 
 // Mensagem que vai no corpo do e-mail
-$mensagem = " Olá Rogério, segue lead coletado no site do <strong> Solução CVG: </strong> <br>
+$mensagem = " Olá Rogério, segue lead coletado no site da <strong> Converge Solution: </strong> <br>
 <br> Nome: $nome <br>
 <br> Telefone: $telefone <br>
 <br> Empresa: $empresa <br>
