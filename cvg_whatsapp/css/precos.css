@@ -2,8 +2,8 @@
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid white;
+    background-color: white;
     border-radius: 15px;
 }
 
@@ -52,9 +52,10 @@
     }
 }
 
+
 /* Clear floats after the columns */
 
-.row:after {
+.rowPrices:after {
     content: "";
     display: table;
     clear: both;
@@ -64,7 +65,7 @@
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
-    .column {
+    .column4 {
         width: 100%;
     }
 }
@@ -86,14 +87,14 @@
 
 /* Remove extra left and right margins, due to padding in columns */
 
-.row {
+.rowPrices {
     margin: 0 -5px;
 }
 
 
 /* Clear floats after the columns */
 
-.row:after {
+.rowPrices:after {
     content: "";
     display: table;
     clear: both;
@@ -105,9 +106,11 @@
 .cardPrices {
     box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
-    padding: 10px;
+
+    padding: 16px;
     text-align: left;
-    background-color: #cccccc;
+    background-color: white;
+
     border-radius: 15px;
 }
 
