@@ -36,10 +36,25 @@
 
 .card {
     box-shadow: 0 45px 5px 0 rgba(0, 0, 0, 0.2);
-    /* this adds the "card" effect */
-    padding: 30px;
+    padding: 0px;
     background-color: #f1f1f1;
     display: block;
+}
+
+.cards-up {
+    box-shadow: 0 45px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    background-color: #f1f1f1;
+    display: block;
+    margin-top: 15%;
+}
+
+.cards-down {
+    box-shadow: 0 45px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    background-color: #f1f1f1;
+    display: block;
+    margin-top: 05%;
 }
 
 
@@ -53,30 +68,18 @@
     }
 }
 
-.logo-cards {
-    width: 70px;
-    height: 70px;
-    display: block;
-    flex-grow: 0;
-    margin-bottom: 20px;
-    border-style: none;
-    max-width: 100%;
-    -webkit-box-direction: normal;
-    word-break: normal;
-    align-self: center;
-}
-
-.cards-btn {
-    font-size: 12px;
-    padding-top: 10px;
-    border: 1px solid rgba(114, 114, 114, 0.496);
-    border-radius: 25px;
-    text-transform: uppercase;
-    color: black;
-    box-shadow: 0 15px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
 .servicos-carrossel {
     width: 50%;
     height: 50%;
+}
+
+.card-title {
+    border-radius: 4px;
+    margin-right: -1px;
+    font-size: medium;
+    background-color: purple;
+    padding: 10px;
+    text-align: center;
+    margin-top: -31px;
+    margin-left: -1px;
 }
