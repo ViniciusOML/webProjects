@@ -111,8 +111,8 @@ li {
 
 p {
     line-height: 1.9;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
+    color: white;
+    font-size: 12px;
 }
 
 img {
@@ -4017,8 +4017,4 @@ body.light-version {
 
 .preview-demo:hover {
     color: #333
-}
-
-html {
-    overflow: hidden;
 }
