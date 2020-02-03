@@ -4018,3 +4018,7 @@ body.light-version {
 .preview-demo:hover {
     color: #333
 }
+
+html {
+    overflow: hidden;
+}

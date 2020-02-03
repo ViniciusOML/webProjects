@@ -3,7 +3,7 @@ var modal = document.getElementById("primeiro");
 var modal2 = document.getElementById("segundo");
 var modal3 = document.getElementById("terceiro");
 var modal4 = document.getElementById("quarto");
-//var scroll = document.getElementsByTagName("html");
+var scroll = document.getElementsByTagName("body");
 
 
 // Get the button that opens the modal
@@ -21,7 +21,7 @@ var fecharQuarto = document.getElementsByClassName("closeQ")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
-    //scroll.style.overflow = "hidden";
+    scroll.style.overflow = "hidden";
 
 
 }
