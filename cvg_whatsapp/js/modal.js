@@ -1,3 +1,7 @@
+// Get the element with id="startSlide" and click on it - 
+//assim esse sempre aparecerá primeiro
+document.getElementById("startSlide").click();
+
 // Get the modal
 var modal = document.getElementById("primeiro");
 var modal2 = document.getElementById("segundo");

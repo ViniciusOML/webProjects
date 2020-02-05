@@ -105,7 +105,7 @@
 /* Style the counter cards */
 
 .cardPrices {
-    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 2);
     /* this adds the "card" effect */
     padding: 16px;
     text-align: left;
@@ -136,7 +136,7 @@
 
 .precos-font-size {
     font-size: 12px;
-    list-style-type: disc;
+    margin-left: 5%;
 }
 
 
