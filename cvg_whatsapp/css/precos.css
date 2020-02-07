@@ -105,7 +105,7 @@
 /* Style the counter cards */
 
 .cardPrices {
-    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 2);
+    box-shadow: -8px 20px 10px 20px rgba(0, 0, 0, 2);
     /* this adds the "card" effect */
     padding: 16px;
     text-align: left;
