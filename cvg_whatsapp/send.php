@@ -10,9 +10,9 @@ $solucao = $_POST['solucao'];
 # FIM DAS INFORMAÇÕES DO CLIENTE   
 
 # INICIO: Informações do remetente
-$senha = 'Cvg340397';
+$senha = 'vini8810';
 $nomeRemetente = 'Converge Marketing';
-$emailRemetente = 'convergemkt01@gmail.com';
+$emailRemetente = 'vinicius.lima@convergemarketing.com.br';
 $titulo = 'Lead Converge Solution';
 # FIM: Informações do remetente
 
@@ -31,7 +31,7 @@ $mail = new PHPMailer;
 $mail->isSMTP();
 
 // Servidor SMTP
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.kinghost.net';
 
 // Usar autenticação SMTP
 $mail->SMTPAuth = true;
@@ -43,10 +43,10 @@ $mail->Username = $emailRemetente;
 $mail->Password = $senha;
 
 // Tipo de encriptação que será usado na conexão SMTP
-$mail->SMTPSecure = 'ssl';
+//$mail->SMTPSecure = 'ssl';
 
 // Porta do servidor SMTP
-$mail->Port = 465;
+$mail->Port = 587;
 
 // Informa se vamos enviar mensagens usando HTML
 $mail->IsHTML(true);

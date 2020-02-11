@@ -1,8 +1,14 @@
+// Get the element with id="startSlide" and click on it - 
+//assim esse sempre aparecerá primeiro
+document.getElementById("startSlide").click();
+
 // Get the modal
 var modal = document.getElementById("primeiro");
 var modal2 = document.getElementById("segundo");
 var modal3 = document.getElementById("terceiro");
 var modal4 = document.getElementById("quarto");
+var scroll = document.getElementsByTagName("body");
+
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn1");
@@ -19,10 +25,14 @@ var fecharQuarto = document.getElementsByClassName("closeQ")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+    scroll.style.overflow = "hidden";
+
+
 }
 
 btn2.onclick = function() {
     modal2.style.display = "block";
+
 }
 
 btn3.onclick = function() {
@@ -32,6 +42,9 @@ btn3.onclick = function() {
 btn4.onclick = function() {
     modal4.style.display = "block";
 }
+
+// Escondendo barra de rolagem
+
 
 // When the user clicks on <span> (x), close the modal
 fecharPrimeiro.onclick = function() {

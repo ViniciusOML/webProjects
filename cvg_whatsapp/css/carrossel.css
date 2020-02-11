@@ -1,0 +1,8 @@
+.span-style-numbers {
+    display: block;
+    font-size: 64px;
+    margin-right: 20px;
+    color: #af56a5;
+    line-height: 1;
+    word-break: normal;
+}
